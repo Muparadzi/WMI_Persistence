@@ -20,8 +20,7 @@ namespace WMIPersistence
             ManagementObject myEventConsumer = null;
             ManagementObject myBinder = null;
 
-            string vbscript64 = "<INSIDE base64 encoded VBS here>";
-            string vbscript = Encoding.UTF8.GetString(Convert.FromBase64String(vbscript64));
+            string vbscript = "MsgBox \"Hello World\"";
             try
             {
                 ManagementScope scope = new ManagementScope(@"\\.\root\subscription");
